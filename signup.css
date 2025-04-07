@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --byway-blue: #3b82f6;
+  --byway-p-text: #334155;
+  --byway-black: #0f172a;
+  --byway-nav-text: #334155;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  color: var(--byway-black);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  padding: 20px 2.5rem;
+  border-bottom: 1px solid #000;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 3rem;
+}
+
+header nav input {
+  width: 622px;
+  height: 40px;
+  padding-left: 40px;
+}
+
+header nav input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header nav div:first-of-type {
+  position: relative;
+}
+
+header nav div:first-of-type .bx-search-alt-2 {
+  font-size: 16px;
+  color: var(--byway-nav-text);
+  position: absolute;
+  top: 28%;
+  left: 15px;
+}
+
+header nav div:first-of-type input {
+  border: 1px solid var(--byway-nav-text);
+  border-radius: 8px;
+}
+
+header nav div:first-of-type input:focus {
+  outline: none;
+}
+
+header nav div:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+header nav div:last-of-type .bx-cart-alt {
+  font-size: 24px;
+}
+
+header nav div:last-of-type button:first-of-type {
+  width: 61px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid var(--byway-nav-text);
+  transition: all 0.3s ease-in-out;
+}
+
+header nav div:last-of-type button:first-of-type:hover {
+  background-color: var(--byway-nav-text);
+  color: #fff;
+  cursor: pointer;
+}
+
+header nav div:last-of-type button:last-of-type {
+  width: 61px;
+  height: 40px;
+  color: #fff;
+  background-color: var(--byway-nav-text);
+  transition: all 0.3s ease-in-out;
+}
+
+header nav div:last-of-type button:last-of-type:hover {
+  background-color: transparent;
+
+  color: var(--byway-nav-text);
+  cursor: pointer;
+}
+main {
+  display: flex;
+  gap: 20px;
+}
