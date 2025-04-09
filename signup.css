@@ -276,3 +276,48 @@ main section:first-of-type img {
     margin-inline: 100px;
   }
 }
+@media (min-width: 701px) and (max-width: 1024px){
+  ul,
+  li {
+    display: none;
+  }
+  header {
+    padding: 20px 4rem;
+  }
+  header nav div:first-of-type input {
+    display: none;
+  }
+  header nav div:first-of-type .bx-search-alt-2 {
+    display: none;
+  }
+
+  header nav div:last-of-type {
+    display: none;
+  }
+
+  #toggle_menu {
+    cursor: pointer;
+    display: block;
+  }
+
+  #toggle_menu i {
+    font-size: 40px;
+  }
+
+  main {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 1990px) {
+  body {
+    width: 70%;
+    margin: auto;
+  }
+  #toggle_menu {
+    cursor: pointer;
+    display: none;
+  }
+  main section:last-of-type{
+    margin-block: 150px;
+  }
+}
