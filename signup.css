@@ -219,6 +219,9 @@ main section:first-of-type img {
   main {
     margin-inline: auto;
   }
+  main section:first-of-type{
+    display: none;
+  }
   main section:last-of-type h2 {
     font-size: 28px;
     font-weight: bold;
