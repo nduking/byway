@@ -114,5 +114,73 @@ header nav div:last-of-type button:last-of-type:hover {
 }
 main {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+}
+/* form section begins */
+main section:last-of-type {
+  padding-inline: 1rem;
+  height: 100vh;
+}
+main section:last-of-type form label {
+  display: block;
+  margin-block: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+}
+.form_div input[type="text"],
+.form_div input[type="password"] {
+  width: 300px;
+  padding: 8px;
+  border-radius: 4px;
+}
+#username,
+.form_div input[type="email"] {
+  width: 620px;
+  padding: 8px;
+  border-radius: 4px;
+}
+main section:last-of-type form button {
+  color: #fff;
+  width: 180px;
+  background-color: #020617;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-block: 20px;
+}
+.form_div span {
+  text-align: center;
+  color: #e2e8f0;
+  font-size: 14px;
+}
+.span_div {
+  display: flex;
+  width: 690px;
+  align-items: center;
+  gap: 5px;
+}
+.span_div span {
+  color: #94a3b8;
+}
+.span_div hr {
+  width: 265px;
+  border: 1px solid #94a3b8;
+}
+i {
+  font-size: 20px;
+}
+.socialbtn button {
+  padding: 10px;
+  border: 1px solid #b2b5c4;
+  background-color: transparent;
+  border-radius: 8px;
+  width: 210px;
+  height: 40px;
+  font-size: 15px;
+}
+/* form section ends */
+main section:first-of-type img {
+  width: 100%;
+  height: 100vh;
 }
