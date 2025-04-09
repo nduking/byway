@@ -120,6 +120,12 @@ main {
 main section:last-of-type {
   padding-inline: 1rem;
   height: 100vh;
+  margin-block: auto;
+}
+main section:last-of-type h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
 }
 main section:last-of-type form label {
   display: block;
@@ -167,9 +173,6 @@ main section:last-of-type form button {
   width: 265px;
   border: 1px solid #94a3b8;
 }
-i {
-  font-size: 20px;
-}
 .socialbtn button {
   padding: 10px;
   border: 1px solid #b2b5c4;
@@ -177,10 +180,99 @@ i {
   border-radius: 8px;
   width: 210px;
   height: 40px;
-  font-size: 15px;
+  cursor: pointer;
 }
 /* form section ends */
 main section:first-of-type img {
   width: 100%;
   height: 100vh;
+}
+
+/* media query */
+@media (max-width: 700px) {
+  ul,
+  li {
+    display: none;
+  }
+  header {
+    padding: 20px 35px;
+  }
+  header nav div:first-of-type input {
+    display: none;
+  }
+  header nav div:first-of-type .bx-search-alt-2 {
+    display: none;
+  }
+
+  header nav div:last-of-type {
+    display: none;
+  }
+
+  #toggle_menu {
+    cursor: pointer;
+    display: block;
+  }
+
+  #toggle_menu i {
+    font-size: 40px;
+  }
+  main {
+    margin-inline: auto;
+  }
+  main section:last-of-type h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: start;
+  }
+  main section:last-of-type form label {
+    /* display: block; */
+    margin-block: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f172a;
+  }
+  .form_div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form_div input[type="text"],
+  .form_div input[type="password"] {
+    width: 310px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  #username,
+  .form_div input[type="email"] {
+    width: 310px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  main section:last-of-type form button {
+    color: #fff;
+    width: 180px;
+    background-color: #020617;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-block: 20px;
+  }
+  .span_div hr {
+    width: 150px;
+    border: 1px solid #94a3b8;
+  }
+  .socialbtn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .socialbtn button {
+    padding: 10px;
+    border: 1px solid #b2b5c4;
+    background-color: transparent;
+    border-radius: 8px;
+    width: 180px;
+    height: 40px;
+    margin-block: 10px;
+    margin-inline: 100px;
+  }
 }
