@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./Images/logo.png" alt="Byway Logo" />
+        <li><a href="#">Categories</a></li>
+        <div>
+          <i class="bx bx-search-alt-2"></i>
+          <input
+            type="search"
+            name="Search Courses"
+            placeholder="Search Courses"
+          />
+        </div>
+        <li><a href="#">Teach On Byway</a></li>
+        <div>
+          <i class="bx bx-cart-alt"></i>
+          <button>Login</button>
+          <button>Signup</button>
+        </div>
+
+        <span id="toggle_menu">
+          <i class="bx bx-menu"></i>
+        </span>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <img src="./images/Frame signup.svg" alt="" />
+      </section>
+      <section>
+        <h2>Create Your Account</h2>
+        <form>
+          <div class="form_div">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="First Name" />
+            <input type="text" id="fullname" placeholder="Last Name" />
+          </div>
+          <div class="form_div">
+            <label for="text">Username</label>
+            <input type="text" id="username" placeholder="Username" />
+          </div>
+
+          <div class="form_div">
+            <label for="email">Email</label>
+            <input type="email" id="email_id" placeholder="Email ID" />
+          </div>
+          <div class="form_div">
+            <label for="password">Password</label>
+            <input type="password" id="pwd" placeholder="Enter Password" />
+            <input
+              type="password"
+              id="confirm_pwd"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <button>Create Account <i class="bx bx-right-arrow-alt"></i></button>
+        </form>
+        <div class="span_div">
+          <hr />
+          Sign up with
+          <hr />
+        </div>
+        <div class="socialbtn">
+          <button><img src="./images/facebook+icon.png" alt=""></button>
+          <button><img src="./images/google+icon.png" alt=""></button>
+          <button><img src="./images/ms+icon.png" alt=""></button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
