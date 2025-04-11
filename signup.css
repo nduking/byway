@@ -120,7 +120,7 @@ main {
 main section:last-of-type {
   padding-inline: 1rem;
   height: 100vh;
-  margin-block: auto;
+  margin-block: 50px;
 }
 main section:last-of-type h2 {
   font-size: 32px;
@@ -219,7 +219,7 @@ main section:first-of-type img {
   main {
     margin-inline: auto;
   }
-  main section:first-of-type{
+  main section:first-of-type {
     display: none;
   }
   main section:last-of-type h2 {
@@ -279,7 +279,7 @@ main section:first-of-type img {
     margin-inline: 100px;
   }
 }
-@media (min-width: 701px) and (max-width: 1024px){
+@media (min-width: 701px) and (max-width: 1024px) {
   ul,
   li {
     display: none;
@@ -320,7 +320,7 @@ main section:first-of-type img {
     cursor: pointer;
     display: none;
   }
-  main section:last-of-type{
+  main section:last-of-type {
     margin-block: 150px;
   }
 }
