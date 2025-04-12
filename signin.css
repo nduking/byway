@@ -121,7 +121,7 @@ main {
 }
 /* form section begins */
 main section:first-of-type {
-  left: 150px;
+  left: 90px;
   padding-block: 250px;
   position: absolute;
 }
@@ -183,7 +183,7 @@ main section:first-of-type form button {
 /* form section ends */
 main section:last-of-type img {
   position: relative;
-  left: 950px;
+  left: 760px;
 }
 /* media query */
 @media (max-width: 700px) {
