@@ -17,6 +17,7 @@ body {
   scroll-behavior: smooth;
   box-sizing: border-box;
   color: var(--byway-black);
+  overflow-x: hidden;
 }
 
 ul,
@@ -114,6 +115,8 @@ header nav div:last-of-type button:last-of-type:hover {
 }
 main {
   display: flex;
+  /* align-items: center; */
+  justify-content: center;
   gap: 10px;
 }
 /* form section begins */
@@ -121,6 +124,7 @@ main section:last-of-type {
   padding-inline: 1rem;
   height: 100vh;
   margin-block: 50px;
+  width: 50%;
 }
 main section:last-of-type h2 {
   font-size: 32px;
@@ -183,13 +187,20 @@ main section:last-of-type form button {
   cursor: pointer;
 }
 /* form section ends */
+main section:first-of-type {
+  width: 50%;
+}
 main section:first-of-type img {
   width: 100%;
+  object-fit: cover;
   height: 100vh;
 }
 
 /* media query */
 @media (max-width: 700px) {
+  body {
+    overflow-x: hidden !important;
+  }
   ul,
   li {
     display: none;
@@ -218,9 +229,10 @@ main section:first-of-type img {
   }
   main {
     margin-inline: auto;
+    flex-direction: column;
   }
   main section:first-of-type {
-    display: none;
+    /* display: none; */
   }
   main section:last-of-type h2 {
     font-size: 28px;
@@ -241,16 +253,17 @@ main section:first-of-type img {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100vw;
   }
   .form_div input[type="text"],
   .form_div input[type="password"] {
-    width: 310px;
+    width: 80%;
     padding: 8px;
     border-radius: 4px;
   }
   #username,
   .form_div input[type="email"] {
-    width: 310px;
+    width: 80%;
     padding: 8px;
     border-radius: 4px;
   }
@@ -277,10 +290,19 @@ main section:first-of-type img {
     border: 1px solid #b2b5c4;
     background-color: transparent;
     border-radius: 8px;
-    width: 180px;
+    width: 80%;
     height: 40px;
     margin-block: 10px;
     margin-inline: 100px;
+  }
+  main section:last-of-type {
+    width: 100%;
+  }
+  main section:first-of-type {
+    width: 100%;
+  }
+  .span_div {
+    width: 80% !important;
   }
 }
 @media (min-width: 701px) and (max-width: 1024px) {
