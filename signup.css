@@ -113,6 +113,9 @@ header nav div:last-of-type button:last-of-type:hover {
   color: var(--byway-nav-text);
   cursor: pointer;
 }
+#toggle_menu{
+  display: none;
+}
 main {
   display: flex;
   /* align-items: center; */
@@ -277,9 +280,11 @@ main section:first-of-type img {
     margin-block: 20px;
   }
 
+
   .span_div hr {
-    width: 120px;
+    width: 35%;
     border: 1px solid #94a3b8;
+    align-items: center;
   }
   .socialbtn {
     display: flex;
