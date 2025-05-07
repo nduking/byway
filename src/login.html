@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>ByWay - Login</title>
+  </head>
+  <body
+    class="xtraLargeScreens:max-w-[1900px] xtraLargeScreens:mx-auto relative h-screen flex flex-col overflow-x-hidden"
+  >
+    <header class="sticky top-0 left-0 bg-white">
+      <nav
+        class="h-[65px] px-[35px] lg:px-28 next_hub:px-10 flex items-center justify-between border-b border-byway_text_gray/40"
+      >
+        <img src="/images/logo.png" alt="Byway Logo" />
+        <li class="list-none hidden lg:flex"><a href="#">Categories</a></li>
+        <div
+          class="border border-byway_text_gray hidden lg:flex items-center justify-start w-[622px] h-[40px] rounded-md"
+        >
+          <i class="bx bx-search-alt-2 pl-4 text-[20px]"></i>
+          <input
+            type="search"
+            name="Search Courses"
+            placeholder="Search Courses"
+            focus:outline-none
+            active:outline-none
+            class="px-3 outline-none border-none w-full h-full rounded-md text-byway_text_gray/60"
+          />
+        </div>
+        <li class="list-none hidden lg:flex"><a href="#">Teach On Byway</a></li>
+        <div class="gap-4 hidden lg:flex items-center justify-center">
+          <i class="bx bx-cart-alt text-[20px]"></i>
+          <button class="w-[61px] h-[40px] border border-byway_text_gray">
+            <a href="./index.html"> Login </a>
+          </button>
+          <button class="w-max h-[40px] bg-byway_text_gray text-white px-4">
+            <a href="./signup.html"> Signup </a>
+          </button>
+        </div>
+
+        <span class="block lg:hidden cursor-pointer">
+          <i class="bx bx-menu text-[35px]"></i>
+        </span>
+      </nav>
+    </header>
+
+    <main
+      class="flex flex-col-reverse lg:flex-row items-start justify-between gap-[60px]"
+    >
+      <section
+        class="w-full lg:w-[60%] py-[35px] lg:py-[80px] px-[35px] md:px-[100px]"
+      >
+        <div class="w-full">
+          <form class="flex items-center justify-center flex-col">
+            <h1 class="text-[32px] font-[600] mb-[30px]">
+              Sign in to your account
+            </h1>
+
+            <div
+              class="flex flex-col items-start justify-start w-full mt-[22px]"
+            >
+              <label for="email" class="font-[600]">Email</label>
+              <input
+                type="email"
+                placeholder="Email ID"
+                class="w-full border border-[#E2E8F0] focus:outline-none active:outline-none h-[58px] rounded-[8px] pl-[18px] mt-[10px]"
+              />
+            </div>
+            <div
+              class="flex flex-col items-start justify-start w-full mt-[22px]"
+            >
+              <label for="password" class="font-[600]">Password</label>
+              <input
+                type="password"
+                placeholder="Password"
+                class="w-full border border-[#E2E8F0] focus:outline-none active:outline-none h-[58px] rounded-[8px] pl-[18px] mt-[10px]"
+              />
+            </div>
+
+            <div
+              class="flex items-center justify-between w-full mt-[22px] text-base"
+            >
+              <button
+                type="submit"
+                class="w-full lg:w-[183px] h-[48px] bg-[#020617] text-white rounded-[8px]"
+              >
+                <span class="w-full">Sign In</span> <span>&rarr;</span>
+              </button>
+            </div>
+
+            <!-- Line -->
+            <div class="my-[35px] capitalize text-sm w-full relative">
+              <div class="w-full h-[1px] bg-[#94A3B8]/30"></div>
+              <span
+                class="text-[#94A3B8] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-4"
+                >Sign up with</span
+              >
+            </div>
+
+            <!-- Socials -->
+            <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-[16px]">
+              <button
+                class="flex items-center justify-center gap-[13px] border border-[#B2B5C4] h-[50px] rounded-md"
+              >
+                <img src="../images/facebookIcon.svg" alt="Facebook" />
+                <span>Facebook</span>
+              </button>
+              <button
+                class="flex items-center justify-center gap-[13px] border border-[#B2B5C4] h-[50px] rounded-md"
+              >
+                <img src="../images/googleIcon.svg" alt="Google" />
+                <span>Google</span>
+              </button>
+              <button
+                class="flex items-center justify-center gap-[13px] border border-[#B2B5C4] h-[50px] rounded-md"
+              >
+                <img src="../images/microsoftIcon.svg" alt="Microsoft" />
+                <span>Microsoft</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="w-full lg:w-[40%]">
+        <img
+          src="../images/signup.svg"
+          alt="Login Image"
+          class="w-full h-full object-contain"
+        />
+      </section>
+    </main>
+  </body>
+</html>

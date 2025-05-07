@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Category-page</title>
+  </head>
+  <body
+    class="xtraLargeScreens:max-w-[1900px] xtraLargeScreens:mx-auto relative h-screen flex flex-col overflow-x-hidden"
+  >
+    <!-- Header Section -->
+    <header class="sticky top-0 left-0 bg-white">
+      <nav
+        class="h-[65px] px-[35px] lg:px-28 next_hub:px-10 flex items-center justify-between border-b border-byway_text_gray/40"
+      >
+        <img src="/images/logo.png" alt="Byway Logo" />
+        <li class="list-none hidden lg:flex"><a href="#">Categories</a></li>
+        <div
+          class="border border-byway_text_gray hidden lg:flex items-center justify-start w-[622px] h-[40px] rounded-md"
+        >
+          <i class="bx bx-search-alt-2 pl-4 text-[20px]"></i>
+          <input
+            type="search"
+            name="Search Courses"
+            placeholder="Search Courses"
+            focus:outline-none
+            active:outline-none
+            class="px-3 outline-none border-none w-full h-full rounded-md text-byway_text_gray/60"
+          />
+        </div>
+        <li class="list-none hidden lg:flex"><a href="#">Teach On Byway</a></li>
+        <div class="gap-4 hidden lg:flex items-center justify-center">
+          <i class="bx bx-cart-alt text-[20px]"></i>
+
+          <button class="w-max h-[40px] bg-[#334155] rounded-full text-white px-4">
+            <a href="./signup.html"> J </a>
+          </button>
+        </div>
+
+        <span class="block lg:hidden cursor-pointer">
+          <i class="bx bx-menu text-[35px]"></i>
+        </span>
+      </nav>
+    </header>
+    <main class="px-[6rem]">
+      <!-- All development begins -->
+      <section class="mx-auto p-6">
+        <h1 class="text-[48px] font-[700]">Design Courses</h1>
+        <h3 class="text-[24px] font-[bold]">All Development Courses</h3>
+        <!-- Main-div -->
+        <div class="flex justify-between">
+          <div class=" ">
+            <button class="text-[22px] font-[500]" ><i class='bx bx-filter'></i>Filter</button>
+          </div>
+          <div class="flex items-center gap-2"><p>Sort By</p> <button class=" w-[101px] h-[40px] border border-[#0F172A] rounded-[5px]">Relevance<i class='bx bxs-chevron-down' ></i></button></div>
+        </div>
+        <section class="flex flex-col md:flex-row gap-3 w-[100%]">
+          <!-- left side -->
+          <section class="grid grid-cols-2 w-[25%]">
+            <!-- rating -->
+            <div class="">
+              <div class="">
+                <h3 class="flex items-center justify-between text-[16px]">Rating <i class='bx bxs-chevron-up' ></i></h3><hr>
+                <div class="flex items-center gap-3">
+                  <div class="text-[#EAB308]">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center gap-3">
+                <div class="text-[#EAB308]">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+            </div>
+            <div>
+              <div class="flex items-center gap-3">
+                <div class="text-[#EAB308]">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+            </div>
+            <div>
+              <div class="flex items-center gap-3">
+                <div class="text-[#EAB308]">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                
+            </div>
+            <div>
+              <div class="flex items-center gap-3">
+                <div class="text-[#EAB308]">
+                  <i class="bx bxs-star"></i>
+                </div> 
+            </div>
+          </div>
+          <!-- ratings ends here -->
+            <!-- Chapters -->
+            <div class="">
+              <h3 class="flex items-center justify-between text-[16px]">Number of Chapters</h3><i class='bx bxs-chevron-up' ></i><hr>
+              <div class="mt-2">
+                  <label class="flex items-center">
+                      <input type="checkbox" class="mr-2 text-[14px]"> 1-10
+                  </label>
+                  <label class="flex items-center">
+                      <input type="checkbox" class="mr-2 text-[14px]"> 10-15
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="mr-2 text-[14px]"> 20-25
+                </label>
+                <a href="#" class="flex items-center text-[14px] text-[#2563EB] mt-2">See More <i class='bx bxs-chevron-down' ></i></a>
+              </div>
+          </div>
+          <!-- Price -->
+           <div>
+            <h3 class="flex items-center justify-between text-[16px]">Price</h3><i class='bx bxs-chevron-up' ></i><hr>
+           </div>
+           <!-- category -->
+           <div>
+            <h3 class="flex items-center justify-between text-[16px]">Price</h3><i class='bx bxs-chevron-up' ></i><hr>
+           </div>
+          </section>
+           <!-- right-part -->
+          <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-3 w-[75%]">
+            <div class="border border-[#E2E8F0]  rounded-lg shadow-lg shadow-slate-400 p-4">
+            <img src="/images/hands on.png" alt="" />
+            <h4 class="text-[18px] font-bold mt-4">
+              Beginners's Guide To Design
+            </h4>
+            <small class="text-[#334155]">By Ronald Richards</small>
+
+            <div class="flex items-center gap-3">
+              <div class="text-[#EAB308]">
+                <i class="bx bxs-star text-[#EAB308]"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <span class="text-sm">(1200 Ratings)</span>
+            </div>
+
+            <small>22 Total Hours. 155 Lectures. Beginner</small>
+
+            <h3 class="font-bold">$149.9</h3>
+            </div>
+            <div class="border border-[#E2E8F0]  rounded-lg shadow-lg shadow-slate-400 p-4">
+              <img src="/images/hands on.png" alt="" />
+              <h4 class="text-[18px] font-bold mt-4">
+                Beginners's Guide To Design
+              </h4>
+              <small class="text-[#334155]">By Ronald Richards</small>
+  
+              <div class="flex items-center gap-3">
+                <div class="text-[#EAB308]">
+                  <i class="bx bxs-star text-[#EAB308]"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+                <span class="text-sm">(1200 Ratings)</span>
+              </div>
+  
+              <small>22 Total Hours. 155 Lectures. Beginner</small>
+  
+              <h3 class="font-bold">$149.9</h3>
+              </div>
+              <div class="border border-[#E2E8F0]  rounded-lg shadow-lg shadow-slate-400 p-4">
+                <img src="/images/hands on.png" alt="" />
+                <h4 class="text-[18px] font-bold mt-4">
+                  Beginners's Guide To Design
+                </h4>
+                <small class="text-[#334155]">By Ronald Richards</small>
+    
+                <div class="flex items-center gap-3">
+                  <div class="text-[#EAB308]">
+                    <i class="bx bxs-star text-[#EAB308]"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                  <span class="text-sm">(1200 Ratings)</span>
+                </div>
+    
+                <small>22 Total Hours. 155 Lectures. Beginner</small>
+    
+                <h3 class="font-bold">$149.9</h3>
+                </div>
+                <div class="border border-[#E2E8F0]  rounded-lg shadow-lg shadow-slate-400 p-4">
+                  <img src="/images/hands on.png" alt="" />
+                  <h4 class="text-[18px] font-bold mt-4">
+                    Beginners's Guide To Design
+                  </h4>
+                  <small class="text-[#334155]">By Ronald Richards</small>
+      
+                  <div class="flex items-center gap-3">
+                    <div class="text-[#EAB308]">
+                      <i class="bx bxs-star text-[#EAB308]"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <span class="text-sm">(1200 Ratings)</span>
+                  </div>
+      
+                  <small>22 Total Hours. 155 Lectures. Beginner</small>
+      
+                  <h3 class="font-bold">$149.9</h3>
+                  </div>
+                  <div class="border border-[#E2E8F0]  rounded-lg shadow-lg shadow-slate-400 p-4">
+                    <img src="/images/hands on.png" alt="" />
+                    <h4 class="text-[18px] font-bold mt-4">
+                      Beginners's Guide To Design
+                    </h4>
+                    <small class="text-[#334155]">By Ronald Richards</small>
+        
+                    <div class="flex items-center gap-3">
+                      <div class="text-[#EAB308]">
+                        <i class="bx bxs-star text-[#EAB308]"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                      </div>
+                      <span class="text-sm">(1200 Ratings)</span>
+                    </div>
+        
+                    <small>22 Total Hours. 155 Lectures. Beginner</small>
+        
+                    <h3 class="font-bold">$149.9</h3>
+                    </div>
+                    <div class="border border-[#E2E8F0]  rounded-lg shadow-lg shadow-slate-400 p-4">
+                      <img src="/images/hands on.png" alt="" />
+                      <h4 class="text-[18px] font-bold mt-4">
+                        Beginners's Guide To Design
+                      </h4>
+                      <small class="text-[#334155]">By Ronald Richards</small>
+          
+                      <div class="flex items-center gap-3">
+                        <div class="text-[#EAB308]">
+                          <i class="bx bxs-star text-[#EAB308]"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                          <i class="bx bxs-star"></i>
+                        </div>
+                        <span class="text-sm">(1200 Ratings)</span>
+                      </div>
+          
+                      <small>22 Total Hours. 155 Lectures. Beginner</small>
+          
+                      <h3 class="font-bold">$149.9</h3>
+                      </div>
+                      <div class="border border-[#E2E8F0]  rounded-lg shadow-lg shadow-slate-400 p-4">
+                        <img src="/images/hands on.png" alt="" />
+                        <h4 class="text-[18px] font-bold mt-4">
+                          Beginners's Guide To Design
+                        </h4>
+                        <small class="text-[#334155]">By Ronald Richards</small>
+            
+                        <div class="flex items-center gap-3">
+                          <div class="text-[#EAB308]">
+                            <i class="bx bxs-star text-[#EAB308]"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                          </div>
+                          <span class="text-sm">(1200 Ratings)</span>
+                        </div>
+            
+                        <small>22 Total Hours. 155 Lectures. Beginner</small>
+            
+                        <h3 class="font-bold">$149.9</h3>
+                        </div>
+                        <div class="border border-[#E2E8F0]  rounded-lg shadow-lg shadow-slate-400 p-4">
+                          <img src="/images/hands on.png" alt="" />
+                          <h4 class="text-[18px] font-bold mt-4">
+                            Beginners's Guide To Design
+                          </h4>
+                          <small class="text-[#334155]">By Ronald Richards</small>
+              
+                          <div class="flex items-center gap-3">
+                            <div class="text-[#EAB308]">
+                              <i class="bx bxs-star text-[#EAB308]"></i>
+                              <i class="bx bxs-star"></i>
+                              <i class="bx bxs-star"></i>
+                              <i class="bx bxs-star"></i>
+                              <i class="bx bxs-star"></i>
+                            </div>
+                            <span class="text-sm">(1200 Ratings)</span>
+                          </div>
+              
+                          <small>22 Total Hours. 155 Lectures. Beginner</small>
+              
+                          <h3 class="font-bold">$149.9</h3>
+                          </div>
+                          <div class="border border-[#E2E8F0]  rounded-lg shadow-lg shadow-slate-400 p-4">
+                            <img src="/images/hands on.png" alt="" />
+                            <h4 class="text-[18px] font-bold mt-4">
+                              Beginners's Guide To Design
+                            </h4>
+                            <small class="text-[#334155]">By Ronald Richards</small>
+                
+                            <div class="flex items-center gap-3">
+                              <div class="text-[#EAB308]">
+                                <i class="bx bxs-star text-[#EAB308]"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                              </div>
+                              <span class="text-sm">(1200 Ratings)</span>
+                            </div>
+                
+                            <small>22 Total Hours. 155 Lectures. Beginner</small>
+                
+                            <h3 class="font-bold">$149.9</h3>
+                            </div>
+                              <!-- All development course ends here -->
+          </section>
+        </section>
+        <!-- Popular Mentors -->
+        <section class="grid md:grid-cols-2 lg:grid-cols-4 py-8 gap-3">
+                <div
+                class="border border-[#E2E8F0]  rounded-lg p-4 ">
+                <img src="/images/Male tutor.png" alt="" class="px-[auto]" />
+                <div class="flex items-center flex-col py-4">
+                  <h3 class="text-[17px] font-semibold">Ronald Richard</h3>
+                  <small>UI/UX Designer</small>
+                </div>
+
+                <div
+                  class="border-t border-slate-400/50 flex items-center justify-between pt-4 pb-3"
+                >
+                  <div class="flex items-center gap-1">
+                    <i class="bx bxs-star text-[#EAB308]"></i>
+                    <h4 class="font-semibold">4.9</h4>
+                  </div>
+
+                  <span class="font-semibold">2400 Students</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+                class="border border-[#E2E8F0] rounded-lg p-4 ">
+                <img src="/images/Male tutor.png" alt="" class="flex flex-col px-[auto]" />
+                <div class="flex items-center flex-col py-4">
+                  <h3 class="text-[17px] font-semibold">Ronald Richard</h3>
+                  <small>UI/UX Designer</small>
+                </div>
+
+                <div
+                  class="border-t border-slate-400/50 flex items-center justify-between pt-4 pb-3"
+                >
+                  <div class="flex items-center gap-1">
+                    <i class="bx bxs-star text-[#EAB308]"></i>
+                    <h4 class="font-semibold">4.9</h4>
+                  </div>
+
+                  <span class="font-semibold">2400 Students</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+                class="border border-[#E2E8F0]  rounded-lg p-4 ">
+                <img src="/images/Male tutor.png" alt="" class="flex flex-col px-[auto]" />
+                <div class="flex items-center flex-col py-4">
+                  <h3 class="text-[17px] font-semibold">Ronald Richard</h3>
+                  <small>UI/UX Designer</small>
+                </div>
+
+                <div
+                  class="border-t border-slate-400/50 flex items-center justify-between pt-4 pb-3"
+                >
+                  <div class="flex items-center gap-1">
+                    <i class="bx bxs-star text-[#EAB308]"></i>
+                    <h4 class="font-semibold">4.9</h4>
+                  </div>
+
+                  <span class="font-semibold">2400 Students</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+                class="border border-[#E2E8F0]  rounded-lg p-4 ">
+                <img src="/images/Male tutor.png" alt="" class="flex flex-col px-[auto]" />
+                <div class="flex items-center flex-col py-4">
+                  <h3 class="text-[17px] font-semibold">Ronald Richard</h3>
+                  <small>UI/UX Designer</small>
+                </div>
+
+                <div
+                  class="border-t border-slate-400/50 flex items-center justify-between pt-4 pb-3"
+                >
+                  <div class="flex items-center gap-1">
+                    <i class="bx bxs-star text-[#EAB308]"></i>
+                    <h4 class="font-semibold">4.9</h4>
+                  </div>
+
+                  <span class="font-semibold">2400 Students</span>
+                </div>
+              </div>
+            </div>
+                
+        </section>
+      </section>
+    </main>
+    <footer
+      class="bg-[#1E293B] text-white px-[35px] py-[4rem] md:px-16 lg:px-28 flex flex-col lg:flex-row items-start justify-between gap-16"
+    >
+      <section class="w-full lg:w-[40%]">
+        <img src="/images/logo.png" alt="Company Logo" />
+        <div>
+          <p class="text-[#CBD5E1] mt-4">
+            Empowering learners through accessible and engaging online
+            education.
+          </p>
+          <p class="text-[#CBD5E1]">
+            Byway is a leading online learning platform dedicated to providing
+            high-quality, flexible, and affordable educational experiences.
+          </p>
+        </div>
+      </section>
+
+      <section class="w-full lg:w-[15%]">
+        <p class="text-[#F1F5F9] text-lg mb-3">Get Help</p>
+        <ul class="text-[#CBD5E1]">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Latest Articles</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </section>
+
+      <section class="w-full lg:w-[15%]">
+        <p class="text-[#F1F5F9] text-lg mb-3">Programs</p>
+        <ul class="text-[#CBD5E1]">
+          <li><a href="#">Art & Design</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">IT & Software</a></li>
+          <li><a href="#">Languages</a></li>
+          <li><a href="#">Programming</a></li>
+        </ul>
+      </section>
+
+      <section class="w-full lg:w-[30%] h-max">
+        <p class="text-[#F1F5F9] text-lg mb-3">Contact Us</p>
+        <div class="text-[#CBD5E1]">
+          <a>Address: 123 Main Street, Anytown, CA 12345</a>
+          <a href="tel:+1234567890" class="mt-2">Tel: +(123) 456-7890</a>
+          <a href="mailto:bywayedu@webkul.in">Mail: bywayedu@webkul.in</a>
+        </div>
+
+        <div class="mt-6 w-full flex items-center gap-5">
+          <i
+            class="text-[30px] bg-byway_light_gray hover:bg-byway_heading text-byway_heading hover:text-byway_light_gray duration-200 ease-linear p-1 cursor-pointer rounded-full bx bxl-facebook"
+          ></i>
+          <i
+            class="text-[30px] bg-byway_light_gray hover:bg-byway_heading text-byway_heading hover:text-byway_light_gray duration-200 ease-linear p-1 cursor-pointer rounded-full bx bxl-github"
+          ></i>
+          <i
+            class="text-[30px] bg-byway_light_gray hover:bg-byway_heading text-byway_heading hover:text-byway_light_gray duration-200 ease-linear p-1 cursor-pointer rounded-full bx bxl-google"
+          ></i>
+          <i
+            class="text-[30px] bg-byway_light_gray hover:bg-byway_heading text-byway_heading hover:text-byway_light_gray duration-200 ease-linear p-1 cursor-pointer rounded-full bx bxl-twitter"
+          ></i>
+          <i
+            class="text-[30px] bg-byway_light_gray hover:bg-byway_heading text-byway_heading hover:text-byway_light_gray duration-200 ease-linear p-1 cursor-pointer rounded-full bx bxl-microsoft"
+          ></i>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Listings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <div class="flex flex-col md:flex-row">
+            <!-- Sidebar Filters -->
+            <aside class="w-full md:w-1/4 p-4 bg-white rounded-lg shadow-md mb-4 md:mb-0">
+                <h2 class="text-xl font-bold mb-4">Filters</h2>
+                
+                <!-- Rating Filter -->
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold">Rating</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> ★★★★★
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> ★★★★☆
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> ★★★☆☆
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Chapters Filter -->
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold">Number of Chapters</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> 1-10
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> 10-15
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Price Filter -->
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold">Price</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> $0 - $50
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> $100 - $150
+                        </label>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Courses Grid -->
+            <main class="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Course Card -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="course-thumbnail.jpg" alt="Course Thumbnail" class="w-full h-40 object-cover rounded-md">
+                    <h3 class="text-lg font-bold mt-3">Beginner's Guide to Design</h3>
+                    <p class="text-gray-600">by Ronald Richards</p>
+                    <div class="flex items-center text-yellow-500 text-sm mt-2">
+                        ★★★★★ (1200)
+                    </div>
+                    <p class="text-gray-500 mt-2 text-sm">22 hours | 155 lectures | Beginner</p>
+                    <p class="text-green-500 font-bold mt-2">$149.9</p>
+                </div>
+                
+
+                <!-- Duplicate the course card to match the grid -->
+            </main>
+        </div>
+    </div>
+</body>
+</html>
