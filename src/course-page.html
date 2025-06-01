@@ -11,7 +11,7 @@
     <title>Course-page</title>
   </head>
   <body
-    class="xtraLargeScreens:max-w-[1900px] xtraLargeScreens:mx-auto relative h-screen flex flex-col overflow-x-hidden"
+    class="xtraLargeScreens:max-w-[1900px] xtraLargeScreens:mx-auto relative h-screen flex flex-col overflow-x-hidden font-inter"
   >
     <!-- Header Section -->
     <header>
@@ -49,443 +49,859 @@
         </span>
       </nav>
     </header>
-    <!--Header Ends here-->
-    <!-- main begins here -->
-    <main class="">
-      <!-- Introduction Section -->
-      <section class="flex bg-[#F8FAFC] px-[4rem] h-[441px]">
-        <!-- user Experience-1 -->
-        <div class="py-[2rem] w-[80%]">
-          <h3 class="font-semibold">
-            Home > categories > Introduction to User Experience Design
-          </h3>
-          <h1 class="text-[40px] font-[700] mt-4">
-            Introduction to User Experience Design
-          </h1>
-          <p class="text-[#334155] text-[20px] font-[400] w-[70%] py-7">
-            This course is meticulously crafted to provide you with a
-            foundational understanding of the principles, methodologies, and
-            tools that drive exceptional user experiences in the digital
-            landscape.
-          </p>
-          <div class="flex items-center w-full gap-3 py-3">
-            <div class="text-[#EAB308]">
-              <i class="bx bxs-star"></i>
-              <i class="bx bxs-star"></i>
-              <i class="bx bxs-star"></i>
-              <i class="bx bxs-star"></i>
-              <i class="bx bxs-star"></i>
+
+    <!-- Main Section -->
+    <main class="flex-1">
+      <!-- Hero -->
+      <section
+        class="bg-[#F8FAFC] px-4 lg:px-[80px] py-[40px] h-max lg:max-h-[441px]"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Content - Takes 2 columns -->
+            <div class="lg:col-span-2 w-full lg:w-[80%]">
+              <!-- Breadcrumbs -->
+              <div
+                class="flex items-center gap-2 text-[10px] lg:text-sm text-byway_text_gray mb-6"
+              >
+                <span class="hover:text-blue-500 cursor-pointer">Home</span>
+                <i class="bx bx-chevron-right"></i>
+                <span class="hover:text-blue-500 cursor-pointer"
+                  >Categories</span
+                >
+                <i class="bx bx-chevron-right"></i>
+                <span class="text-blue-500"
+                  >Introduction to User Experience Design</span
+                >
+              </div>
+
+              <!-- Course Title -->
+              <h1
+                class="text-3xl lg:text-4xl font-bold text-byway_heading mb-4"
+              >
+                Introduction to User Experience Design
+              </h1>
+
+              <!-- Course Description -->
+              <p class="text-byway_text_gray text-lg mb-6 leading-relaxed">
+                This course is meticulously crafted to provide you with a
+                foundational understanding of the principles, methodologies, and
+                tools that drive exceptional user experiences in the digital
+                landscape.
+              </p>
+
+              <!-- Rating and Info -->
+              <div class="flex flex-wrap items-center gap-4 mb-6">
+                <div class="flex items-center gap-2 text-byway_text_gray">
+                  <span class="font-bold text-lg text-byway_yellow">4.6</span>
+                  <div class="flex items-center text-byway_yellow">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                  <span class="text-byway_text_gray">(651651 ratings)</span>
+                </div>
+                <span class="text-byway_text_gray">|</span>
+                <span class="text-byway_text_gray"
+                  >22 Total Hours. 155 Lectures. All levels</span
+                >
+              </div>
+
+              <!-- Creator -->
+              <div class="flex items-center gap-3 mb-4">
+                <div
+                  class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center"
+                >
+                  <i class="bx bx-user text-xl"></i>
+                </div>
+                <span class="text-byway_text_gray">
+                  Created by
+                  <span class="text-byway_blue font-semibold"
+                    >Ronal Richards</span
+                  >
+                </span>
+              </div>
+
+              <!-- Languages -->
+              <div
+                class="flex items-center gap-2 text-byway_text_gray mt-[30px] text-sm"
+              >
+                <i class="bx bx-globe text-[25px]"></i>
+                <span>English, Spanish, Italian, German</span>
+              </div>
             </div>
-            <p class="text-[16px]">
-              (651651 rating) | 22 Total Hours. 155 Lectures. All levels
-            </p>
+
+            <!-- Right - Course Card -->
+            <div class="lg:col-span-1">
+              <div
+                class="bg-white shadow-lg shadow-[#3B82F6]/15 rounded-[10px] p-6 sticky top-4"
+              >
+                <!-- Course Image -->
+                <div
+                  class="w-full h-48 rounded-lg mb-6 flex items-center justify-center"
+                >
+                  <img src="../images/tutor.svg" alt="" />
+                </div>
+
+                <!-- Pricing -->
+                <div class="flex items-center gap-3 mb-6">
+                  <span class="text-lg font-bold text-byway_heading"
+                    >$49.5</span
+                  >
+                  <span class="text-lg text-byway_text_gray line-through"
+                    >$99.5</span
+                  >
+                  <span
+                    class="text-byway_green text-lg px-2 py-1 rounded font-semibold"
+                  >
+                    50% Off
+                  </span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="space-y-3 mb-6">
+                  <button
+                    class="w-full bg-byway_black text-white py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors"
+                  >
+                    Add To Cart
+                  </button>
+                  <button
+                    class="w-full border-2 border-byway_heading text-byway_heading py-3 rounded-lg font-semibold hover:bg-byway_black hover:text-white transition-colors"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+
+                <!-- Share Section -->
+                <div class="border-t border-slate-200 pt-6">
+                  <p class="text-byway_heading font-semibold mb-4">Share</p>
+                  <div class="flex gap-3 flex-wrap">
+                    <i
+                      class="bx bxl-facebook-circle p-2 text-[30px] border border-slate-300 cursor-pointer rounded-full hover:bg-byway_yellow hover:border-byway_yellow transition-all duration-300"
+                    ></i>
+                    <i
+                      class="bx bxl-google p-2 text-[30px] border border-slate-300 cursor-pointer rounded-full hover:bg-byway_yellow hover:border-byway_yellow transition-all duration-300"
+                    ></i>
+                    <i
+                      class="bx bxl-github p-2 text-[30px] border border-slate-300 cursor-pointer rounded-full hover:bg-byway_yellow hover:border-byway_yellow transition-all duration-300"
+                    ></i>
+                    <i
+                      class="bx bxl-twitter p-2 text-[30px] border border-slate-300 cursor-pointer rounded-full hover:bg-byway_yellow hover:border-byway_yellow transition-all duration-300"
+                    ></i>
+                    <i
+                      class="bx bxl-microsoft p-2 text-[30px] border border-slate-300 cursor-pointer rounded-full hover:bg-byway_yellow hover:border-byway_yellow transition-all duration-300"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="flex items-center gap-2 py-2">
-            <img src="/images/ronal_escplise.png" class="w-[40px]" alt="" />
-            <div class="flex gap-1">
-              <p class="text-[16px] font-[400]">Created by</p>
-              <p class="text-[16px] text-[#2563EB] font-[400]">
-                Ronal Richards
+        </div>
+      </section>
+
+      <!-- Action Buttons / Course Description / Certification -->
+      <section class="px-4 lg:px-[80px] py-[40px]">
+        <!-- Action Buttons -->
+        <div
+          class="border-b border-slate-200 pb-[25px] space-y-[24px] lg:space-y-0 space-x-0 lg:space-x-[24px] w-full lg:w-[65%] flex flex-col lg:flex-row items-center"
+        >
+          <button
+            class="w-full lg:w-[148px] h-[57px] hover:bg-[#EFF6FF] text-[#0F172A] border border-slate-200 rounded-md"
+          >
+            Description
+          </button>
+          <button
+            class="w-full lg:w-[148px] h-[57px] hover:bg-[#EFF6FF] text-[#0F172A] border border-slate-200 rounded-md"
+          >
+            Instructor
+          </button>
+          <button
+            class="w-full lg:w-[148px] h-[57px] hover:bg-[#EFF6FF] text-[#0F172A] border border-slate-200 rounded-md"
+          >
+            Syllables
+          </button>
+          <button
+            class="w-full lg:w-[148px] h-[57px] hover:bg-[#EFF6FF] text-[#0F172A] border border-slate-200 rounded-md"
+          >
+            Reviews
+          </button>
+        </div>
+
+        <!-- Course Description -->
+        <div class="mt-[24px] w-full lg:w-[50%]">
+          <h3 class="font-bold text-lg text-[#0F172A]">Course Description</h3>
+          <p class="text-byway_text_gray mt-[10px]">
+            This interactive e-learning course will introduce you to User
+            Experience (UX) design, the art of creating products and services
+            that are intuitive, enjoyable, and user-friendly. Gain a solid
+            foundation in UX principles and learn to apply them in real-world
+            scenarios through engaging modules and interactive exercises.
+          </p>
+        </div>
+
+        <!-- Course Certification -->
+        <div
+          class="mt-[24px] w-full lg:w-[50%] border-b border-slate-200 pb-[24px]"
+        >
+          <h3 class="font-bold text-lg text-[#0F172A]">Certification</h3>
+          <p class="text-byway_text_gray mt-[10px]">
+            This interactive e-learning course will introduce you to User
+            Experience (UX) design, the art of creating products and services
+            that are intuitive, enjoyable, and user-friendly. Gain a solid
+            foundation in UX principles and learn to apply them in real-world
+            scenarios through engaging modules and interactive exercises.
+          </p>
+        </div>
+      </section>
+
+      <!-- Instructor Section -->
+      <section class="px-4 lg:px-[80px] py-[40px] w-full lg:w-[65%]">
+        <!-- Instructor Section -->
+        <div class="p-0 lg:p-8">
+          <h2 class="text-lg font-semibold text-gray-900 mb-6">Instructor</h2>
+
+          <div class="flex items-start space-x-4">
+            <!-- Instructor Info -->
+            <div class="flex-1">
+              <h3 class="text-lg font-semibold text-byway_blue mb-1">
+                Ronald Richards
+              </h3>
+              <p class="text-byway_text_gray text-sm mb-4">UI/UX Designer</p>
+
+              <!-- Stats -->
+              <div class="flex items-center gap-[10px]">
+                <!-- Profile Image -->
+                <div>
+                  <img src="../images/Ellipse 61.png" alt="" />
+                </div>
+                <div>
+                  <div class="flex items-center space-x-2">
+                    <span>icon</span>
+                    <span class="text-sm text-course-gray">40,445 Reviews</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span>icon</span>
+                    <span class="text-sm text-course-gray">500 Students</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span>icon</span>
+                    <span class="text-sm text-course-gray">15 Courses</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Description -->
+              <p class="text-sm text-gray-700 mt-4 leading-relaxed">
+                With over a decade of industry experience, Ronald brings a
+                wealth of practical knowledge to the classroom. He has played a
+                pivotal role in designing user-centric interfaces for renowned
+                tech companies, ensuring seamless and engaging user experiences.
               </p>
             </div>
           </div>
-          <div class="flex items-center py-2">
-            <p class="text-[#334155] text-[15px]">
-              <i class="bx bx-globe text-[20px]"></i> English, Spnaish, Italian,
-              German
-            </p>
-          </div>
         </div>
 
-        <!-- User Experience-2 -->
-        <div
-          class="w-[25%] border border-solid rounded-[10px] items-center border-[#E2E8F0] p-6 mt-8 absolute left-[1320px]"
-        >
-          <img src="/images/discount-man.png" class="px-[auto] w-[100%]" />
-          <div class="py-4">
-            <span class="text-[22px] font-[600] text-[#0F172A]">$49.5</span>
-            <span class="line-through text-[18px] font-[600] text-[#94A3B8]"
-              >$99.5</span
-            >
-            <span class="text-[20px] font-[600] text-[#16A34A]">50% Off</span>
-          </div>
-          <div class="flex flex-col gap-y-5">
-            <button
-              class="h-[48px] bg-[#000] text-[white] text-[14px] rounded-[10px] border"
-            >
-              Add To Cart
-            </button>
-            <button
-              class="h-[48px] text-[#000] rounded-[10px] border border-solid border-black"
-            >
-              Buy Now
-            </button>
-          </div>
-          <div class="py-3">
-            <span class="text-[16px] font-[500]">Share</span>
-            <img src="/images/social-btns.png" class="mt-3" />
-          </div>
-        </div>
-      </section>
-      <!-- Introduction Sections Ends here -->
-      <!-- Description Section Starts here -->
-      <section class="px-[4rem]">
-        <div class="py-10 lg:w-[840px]">
-          <div class="flex w-[70%] gap-6">
-            <button
-              class="border-[#E2E8F0] bg-[#EFF6FF] w-[148px] h-[57px] rounded-[10px]"
-            >
-              Description</button
-            ><button
-              class="border-2 rounded-[10px] border-[#E2E8F0] w-[148px] h-[57px]"
-            >
-              Instructor</button
-            ><button
-              class="border-2 rounded-[10px] border-[#E2E8F0] w-[148px] h-[57px]"
-            >
-              Syllabus</button
-            ><button
-              class="border-2 rounded-[10px] border-[#E2E8F0] w-[148px] h-[57px]"
-            >
-              Reviews
-            </button>
-          </div>
-          <div class="lg:w-[840px] py-7">
-            <h2 class="text-[22px] font-[600] text-[#0F172A] py-2">
-              Course Description
-            </h2>
-            <p class="text-[20px] text-[#334155] font-[400]">
-              This interactive e-learning course will introduce you to User
-              Experience (UX) design, the art of creating products and services
-              that are intuitive, enjoyable, and user-friendly. Gain a solid
-              foundation in UX principles and learn to apply them in real-world
-              scenarios through engaging modules and interactive exercises.
-            </p>
-          </div>
-          <div class="lg:w-[840px]">
-            <h2 class="text-[22px] font-[600] text-[#0F172A] py-2">
-              Certification
-            </h2>
-            <p class="text-[20px] text-[#334155] font-[400]">
-              At Byway, we understand the significance of formal recognition for
-              your hard work and dedication to continuous learning. Upon
-              successful completion of our courses, you will earn a prestigious
-              certification that not only validates your expertise but also
-              opens doors to new opportunities in your chosen field.
-            </p>
-          </div>
-          <div class="py-6 lg:w-[840px]">
-            <h3 class="text-[20px] font-[600]">Instructor</h3>
-            <h3 class="text-[20px] font-[600] text-[#2563EB] mt-4">
-              Ronald Richards
-            </h3>
-            <p class="text-[16px] font-[400] text-[#334155]">UI/UX Designer</p>
-            <div class="flex items-center gap-3 py-6">
-              <img
-                src="/images/ronal_escplise.png"
-                class="w-[120px] h-[120px]"
-                alt=""
-              />
-              <div class="flex-row items-center">
-                <p class="text-[16px] font-[400] text-[#0F172A]">
-                  <i class="bx bx-medal text-[18px]"></i> 40,445 Reviews
-                </p>
-                <p class="text-[16px] font-[400] text-[#0F172A]">
-                  <i class="bx bxs-graduation text-[18px]"></i> 500 Students
-                </p>
-                <p class="text-[16px] font-[400] text-[#0F172A]">
-                  <i class="bx bx-right-arrow text-[18px]"></i> 15 Courses
-                </p>
-              </div>
-            </div>
-            <p class="text-[20px] font-[400] text-[#64748B]">
-              With over a decade of industry experience, Ronald brings a wealth
-              of practical knowledge to the classroom. He has played a pivotal
-              role in designing user-centric interfaces for renowned tech
-              companies, ensuring seamless and engaging user experiences.
-            </p>
-          </div>
-          <div class="flex flex-col">
-            <h2 class="text-[20px] text-[#0F172A] font-[600]">Syllabus</h2>
-            <div class="grid items-center grid-cols-2">
-              <!-- Introduction -->
-              <div class="my-5">
-                <h3 class="text-[20px] text-[#0F172A] font-[600]">
-                  <i class="bx bx-chevron-down text-[20px]"></i>Introduction to
-                  UX Design
-                </h3>
-              </div>
-              <div class="flex my-5">
-                <p class="text-[#334155]">5 Lessons 1 hour</p>
-              </div>
-              <!-- Basic -->
-              <div class="my-5">
-                <h3 class="text-[20px] text-[#0F172A] font-[600]">
-                  <i class="bx bx-chevron-down text-[20px]"></i>Basics of
-                  User-Centered Design
-                </h3>
-              </div>
-              <div class="my-5">
-                <p class="text-[#334155]">5 Lessons 1 hour</p>
-              </div>
-              <!-- Element -->
-              <div class="my-5">
-                <h3 class="text-[20px] text-[#0F172A] font-[600]">
-                  <i class="bx bx-chevron-down text-[20px]"></i>Elements of User
-                  Experience
-                </h3>
-              </div>
-              <div class="my-5">
-                <p class="text-[#334155]">5 Lessons 1 hour</p>
-              </div>
-              <!-- Visual -->
-              <div class="my-5">
-                <h3 class="text-[20px] text-[#0F172A] font-[600]">
-                  <i class="bx bx-chevron-down text-[20px]"></i>Visual Design
-                  Principles
-                </h3>
-              </div>
-              <div class="my-5">
-                <p class="text-[#334155]">5 Lessons 1 hour</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Description Section Ends here -->
+        <!-- Syllabus Section -->
+        <div class="p-0 lg:p-8 mt-8 lg:mt-0">
+          <h2 class="text-lg font-semibold text-gray-900 mb-6">Syllabus</h2>
 
-      <!-- Learner Reviews Section Starts here -->
-      <section class="px-[4rem] h-[441px] flex flex-col">
-        <h3 class="text-[20px] font-[600] text-[#0F172A] py-7">
-          Learner Reviews
-        </h3>
-        <div class="flex w-full">
-          <!-- Ratings -->
-          <div class="w-[30%]">
-            <div class="flex items-center w-full gap-2 py-5">
-              <i class="bx bxs-star text-[#EAB308]"></i>
-              <h3 class="text-[20px] font-[600]">4.6</h3>
-              <p class="text-[#334155]">146,951 reviews</p>
-            </div>
-            <div class="flex items-center w-full gap-3">
-              <div class="text-[#EAB308]">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-              <p class="text-[#334155]">80%</p>
-            </div>
-            <div class="flex items-center w-full gap-3">
-              <div class="text-[#EAB308]">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star text-[#CBD5E1]"></i>
-              </div>
-              <p class="text-[#334155]">10%</p>
-            </div>
-            <div class="flex items-center w-full gap-3">
-              <div class="text-[#EAB308]">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star text-[#CBD5E1]"></i>
-                <i class="bx bxs-star text-[#CBD5E1]"></i>
-              </div>
-              <p class="text-[#334155]">5%</p>
-            </div>
-            <div class="flex items-center w-full gap-3">
-              <div class="text-[#EAB308]">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star text-[#CBD5E1]"></i>
-                <i class="bx bxs-star text-[#CBD5E1]"></i>
-                <i class="bx bxs-star text-[#CBD5E1]"></i>
-              </div>
-              <p class="text-[#334155]">3%</p>
-            </div>
-            <div class="flex items-center w-full gap-3">
-              <div class="text-[#EAB308]">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star text-[#CBD5E1]"></i>
-                <i class="bx bxs-star text-[#CBD5E1]"></i>
-                <i class="bx bxs-star text-[#CBD5E1]"></i>
-                <i class="bx bxs-star text-[#CBD5E1]"></i>
-              </div>
-              <p class="text-[#334155]">2%</p>
-            </div>
-          </div>
-          <!-- Reviewed -->
-          <div class="w-[65%] flex flex-col gap-4">
-            <div
-              class="grid grid-cols-2 border border-[#E2E8F0] rounded-[10px] p-6"
-            >
-              <div class="flex items-center gap-4">
-                <img
-                  src="/images/Mark Doe.png"
-                  class="w-[100px] h-[100px] rounded-full"
-                  alt=""
-                />
-                <h3 class="text-[#0F172A] text-[18px] font-[600]">Mark Doe</h3>
-              </div>
-              <div>
-                <div class="flex items-center w-full gap-2 py-3">
-                  <i class="bx bxs-star text-[#EAB308]"></i>
-                  <h3 class="text-[18px] font-[600]">5</h3>
-                  <p class="text-[#334155]">146,951 reviews</p>
+          <div class="space-y-4">
+            <!-- Module 1 -->
+            <div class="border border-gray-200 rounded-lg">
+              <button
+                class="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors duration-200"
+                onclick="toggleAccordion('module1')"
+              >
+                <div class="flex items-center space-x-3">
+                  <svg
+                    id="module1-icon"
+                    class="w-5 h-5 text-course-gray transform transition-transform duration-200"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span class="font-medium text-gray-900"
+                    >Introduction to UX Design</span
+                  >
                 </div>
-                <p>
-                  I was initially apprehensive, having no prior design
-                  experience. But the instructor, John Doe, did an amazing job
-                  of breaking down complex concepts into easily digestible
-                  modules. The video lectures were engaging, and the real-world
-                  examples really helped solidify my understanding.
-                </p>
-              </div>
-            </div>
-            <div
-              class="grid grid-cols-2 border border-[#E2E8F0] rounded-[10px] p-6"
-            >
-              <div class="flex items-center gap-4">
-                <img
-                  src="/images/Mark Doe.png"
-                  class="w-[100px] h-[100px] rounded-full"
-                  alt=""
-                />
-                <h3 class="text-[#0F172A] text-[18px] font-[600]">Mark Doe</h3>
-              </div>
-              <div>
-                <div class="flex items-center w-full gap-2 py-3">
-                  <i class="bx bxs-star text-[#EAB308]"></i>
-                  <h3 class="text-[18px] font-[600]">5</h3>
-                  <p class="text-[#334155]">146,951 reviews</p>
+                <div
+                  class="flex items-center space-x-6 text-sm text-course-gray"
+                >
+                  <span>5 Lessons</span>
+                  <span>1 hour</span>
                 </div>
-                <p>
-                  I was initially apprehensive, having no prior design
-                  experience. But the instructor, John Doe, did an amazing job
-                  of breaking down complex concepts into easily digestible
-                  modules. The video lectures were engaging, and the real-world
-                  examples really helped solidify my understanding.
-                </p>
-              </div>
-            </div>
-            <div
-              class="grid grid-cols-2 border border-[#E2E8F0] rounded-[10px] p-6"
-            >
-              <div class="flex items-center gap-4">
-                <img
-                  src="/images/Mark Doe.png"
-                  class="w-[100px] h-[100px] rounded-full"
-                  alt=""
-                />
-                <h3 class="text-[#0F172A] text-[18px] font-[600]">Mark Doe</h3>
-              </div>
-              <div>
-                <div class="flex items-center w-full gap-2 py-3">
-                  <i class="bx bxs-star text-[#EAB308]"></i>
-                  <h3 class="text-[18px] font-[600]">5</h3>
-                  <p class="text-[#334155]">146,951 reviews</p>
-                </div>
-                <p>
-                  I was initially apprehensive, having no prior design
-                  experience. But the instructor, John Doe, did an amazing job
-                  of breaking down complex concepts into easily digestible
-                  modules. The video lectures were engaging, and the real-world
-                  examples really helped solidify my understanding.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <button class="border border-[#0F172A] rounded-[10px] p-3">
-                View more Reviews
               </button>
+              <div id="module1-content" class="hidden px-4 pb-4">
+                <div class="ml-8 space-y-2 text-sm text-gray-600">
+                  <p>• What is UX Design?</p>
+                  <p>• UX vs UI Design</p>
+                  <p>• The UX Design Process</p>
+                  <p>• Industry Overview</p>
+                  <p>• Career Paths in UX</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="border border-gray-200 rounded-lg">
+              <button
+                class="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors duration-200"
+                onclick="toggleAccordion('module2')"
+              >
+                <div class="flex items-center space-x-3">
+                  <svg
+                    id="module2-icon"
+                    class="w-5 h-5 text-course-gray transform transition-transform duration-200"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span class="font-medium text-gray-900"
+                    >Basics of User-Centered Design</span
+                  >
+                </div>
+                <div
+                  class="flex items-center space-x-6 text-sm text-course-gray"
+                >
+                  <span>5 Lessons</span>
+                  <span>1 hour</span>
+                </div>
+              </button>
+              <div id="module2-content" class="hidden px-4 pb-4">
+                <div class="ml-8 space-y-2 text-sm text-gray-600">
+                  <p>• User-Centered Design Principles</p>
+                  <p>• Understanding Your Users</p>
+                  <p>• User Personas and Journey Maps</p>
+                  <p>• Empathy in Design</p>
+                  <p>• Design Thinking Methodology</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="border border-gray-200 rounded-lg">
+              <button
+                class="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors duration-200"
+                onclick="toggleAccordion('module3')"
+              >
+                <div class="flex items-center space-x-3">
+                  <svg
+                    id="module3-icon"
+                    class="w-5 h-5 text-course-gray transform transition-transform duration-200"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span class="font-medium text-gray-900"
+                    >Elements of User Experience</span
+                  >
+                </div>
+                <div
+                  class="flex items-center space-x-6 text-sm text-course-gray"
+                >
+                  <span>5 Lessons</span>
+                  <span>1 hour</span>
+                </div>
+              </button>
+              <div id="module3-content" class="hidden px-4 pb-4">
+                <div class="ml-8 space-y-2 text-sm text-gray-600">
+                  <p>• Strategy and Scope</p>
+                  <p>• Structure and Skeleton</p>
+                  <p>• Surface Design</p>
+                  <p>• Information Architecture</p>
+                  <p>• Interaction Design</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="border border-gray-200 rounded-lg">
+              <button
+                class="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors duration-200"
+                onclick="toggleAccordion('module4')"
+              >
+                <div class="flex items-center space-x-3">
+                  <svg
+                    id="module4-icon"
+                    class="w-5 h-5 text-course-gray transform transition-transform duration-200"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span class="font-medium text-gray-900"
+                    >Visual Design Principles</span
+                  >
+                </div>
+                <div
+                  class="flex items-center space-x-6 text-sm text-course-gray"
+                >
+                  <span>5 Lessons</span>
+                  <span>1 hour</span>
+                </div>
+              </button>
+              <div id="module4-content" class="hidden px-4 pb-4">
+                <div class="ml-8 space-y-2 text-sm text-gray-600">
+                  <p>• Typography in UX Design</p>
+                  <p>• Color Theory and Application</p>
+                  <p>• Layout and Composition</p>
+                  <p>• Visual Hierarchy</p>
+                  <p>• Design Systems</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-     <!-- What Our Customers Says -->
-      <section class="bg-[#F8FAFC] px-[35px] py-[4rem] lg:px-28">
-        <div
-          class="flex flex-col items-center justify-between mb-8 lg:flex-row"
-        >
-          <h2 class="text-byway_heading text-[24px] font-bold">
-            What Our Customer Say About Us
+
+      <!-- // Learners Review -->
+      <section class="px-4 lg:px-[80px] py-[40px]">
+        <!-- Learner Reviews Section -->
+        <div class="bg-white shadow-sm p-0 md:p-8">
+          <h2 class="text-xl md:text-2xl font-semibold text-gray-900 mb-6">
+            Learner Reviews
           </h2>
 
-          <div class="flex items-center gap-3">
-            <i
-              class="bx bx-chevron-left w-[56px] h-[40px] bg-[#94A3B8] p-3 flex items-center justify-center text-[20px] text-white rounded-lg"
-            ></i>
-            <i
-              class="bx bx-chevron-right w-[56px] h-[40px] bg-[#94A3B8] p-3 flex items-center justify-center text-[20px] text-white rounded-lg"
-            ></i>
-          </div>
-        </div>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-[130px]">
+            <!-- Rating Summary -->
+            <div class="lg:col-span-1">
+              <div class="flex items-center mb-4">
+                <span class="text-3xl md:text-4xl font-bold text-gray-900"
+                  >4.6</span
+                >
+                <div class="ml-3">
+                  <div class="flex items-center mb-1">
+                    <!-- 5 Stars -->
+                    <div class="flex space-x-1">
+                      <span class="text-byway_yellow"
+                        ><i class="bx bxs-star"></i
+                      ></span>
+                      <span class="text-byway_yellow"
+                        ><i class="bx bxs-star"></i
+                      ></span>
+                      <span class="text-byway_yellow"
+                        ><i class="bx bxs-star"></i
+                      ></span>
+                      <span class="text-byway_yellow"
+                        ><i class="bx bxs-star"></i
+                      ></span>
+                      <span class="text-star-gray"
+                        ><i class="bx bxs-star"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <p class="text-sm text-gray-600">148,951 reviews</p>
+                </div>
+              </div>
 
-        <div
-          class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 place-items-center place-content-center"
-        >
-          <div
-            class="border border-[#E2E8F0] w-full  px-8 py-6"
-          >
-            <img src="/images/quotes.svg" alt="" class="quotes" />
-            <p class="my-6">
-              "Byway's tech courses are top-notch! As someone who's always
-              looking to stay ahead in the rapidly evolving tech world, I
-              appreciate the up-to-date content and engaging multimedia.
-            </p>
+              <!-- Rating Breakdown -->
+              <div class="space-y-2">
+                <!-- 5 Stars -->
+                <div class="flex items-center space-x-3">
+                  <div class="flex space-x-1">
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                  </div>
+                  <div class="flex-1 bg-gray-200 rounded-full h-2">
+                    <div
+                      class="bg-star-yellow h-2 rounded-full"
+                      style="width: 50%"
+                    ></div>
+                  </div>
+                  <span class="text-sm text-gray-600 w-8">50%</span>
+                </div>
 
-            <div class="flex items-center gap-3">
-              <img src="/images/Ellipse 61.png" alt="" />
-              <div>
-                <h4>Jane Doe</h4>
-                <small>Designer</small>
+                <!-- 4 Stars -->
+                <div class="flex items-center space-x-3">
+                  <div class="flex space-x-1">
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-star-gray text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                  </div>
+                  <div class="flex-1 bg-gray-200 rounded-full h-2">
+                    <div
+                      class="bg-star-yellow h-2 rounded-full"
+                      style="width: 10%"
+                    ></div>
+                  </div>
+                  <span class="text-sm text-gray-600 w-8">10%</span>
+                </div>
+
+                <!-- 3 Stars -->
+                <div class="flex items-center space-x-3">
+                  <div class="flex space-x-1">
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-star-gray text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-star-gray text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                  </div>
+                  <div class="flex-1 bg-gray-200 rounded-full h-2">
+                    <div
+                      class="bg-star-yellow h-2 rounded-full"
+                      style="width: 3%"
+                    ></div>
+                  </div>
+                  <span class="text-sm text-gray-600 w-8">3%</span>
+                </div>
+
+                <!-- 2 Stars -->
+                <div class="flex items-center space-x-3">
+                  <div class="flex space-x-1">
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-star-gray text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-star-gray text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-star-gray text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                  </div>
+                  <div class="flex-1 bg-gray-200 rounded-full h-2">
+                    <div
+                      class="bg-star-yellow h-2 rounded-full"
+                      style="width: 2%"
+                    ></div>
+                  </div>
+                  <span class="text-sm text-gray-600 w-8">2%</span>
+                </div>
+
+                <!-- 1 Star -->
+                <div class="flex items-center space-x-3">
+                  <div class="flex space-x-1">
+                    <span class="text-byway_yellow text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-star-gray text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-star-gray text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-star-gray text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                    <span class="text-star-gray text-xs"
+                      ><i class="bx bxs-star"></i
+                    ></span>
+                  </div>
+                  <div class="flex-1 bg-gray-200 rounded-full h-2">
+                    <div
+                      class="bg-star-yellow h-2 rounded-full"
+                      style="width: 2%"
+                    ></div>
+                  </div>
+                  <span class="text-sm text-gray-600 w-8">2%</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="border border-[#E2E8F0] w-full rounded-lg shadow-lg shadow-slate-400 hover:scale-[1.01] duration-200 ease-linear px-8 py-6"
-          >
-            <img src="/images/quotes.svg" alt="" class="quotes" />
-            <p class="my-6">
-              "Byway's tech courses are top-notch! As someone who's always
-              looking to stay ahead in the rapidly evolving tech world, I
-              appreciate the up-to-date content and engaging multimedia.
-            </p>
 
-            <div class="flex items-center gap-3">
-              <img src="/images/Ellipse 61.png" alt="" />
-              <div>
-                <h4>Jane Doe</h4>
-                <small>Designer</small>
+            <!-- Individual Reviews -->
+            <div class="lg:col-span-2 space-y-6">
+              <!-- Review 1 -->
+              <div class="flex space-x-4 p-4 bg-gray-50 rounded-lg">
+                <img
+                  src=""
+                  alt="Mark Doe"
+                  class="w-12 h-12 rounded-full flex-shrink-0"
+                />
+                <div class="flex-1">
+                  <div class="flex items-center justify-between mb-2">
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Mark Doe</h4>
+                      <div class="flex items-center space-x-2">
+                        <div class="flex space-x-1">
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                        </div>
+                        <span class="text-sm text-gray-600">5</span>
+                      </div>
+                    </div>
+                    <span class="text-sm text-gray-500"
+                      >Reviewed on 22nd March, 2024</span
+                    >
+                  </div>
+                  <p class="text-gray-700 text-sm leading-relaxed">
+                    I was initially apprehensive, having no prior design
+                    experience. But the instructor, John Doe, did an amazing job
+                    of breaking down complex concepts into easily digestible
+                    modules. The video lectures were engaging, and the
+                    real-world examples really helped solidify my understanding.
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div
-            class="border border-[#E2E8F0] w-full rounded-lg shadow-lg shadow-slate-400 hover:scale-[1.01] duration-200 ease-linear px-8 py-6"
-          >
-            <img src="/images/quotes.svg" alt="" class="quotes" />
-            <p class="my-6">
-              "Byway's tech courses are top-notch! As someone who's always
-              looking to stay ahead in the rapidly evolving tech world, I
-              appreciate the up-to-date content and engaging multimedia.
-            </p>
 
-            <div class="flex items-center gap-3">
-              <img src="/images/Ellipse 61.png" alt="" />
-              <div>
-                <h4>Jane Doe</h4>
-                <small>Designer</small>
+              <!-- Review 2 -->
+              <div class="flex space-x-4 p-4 bg-gray-50 rounded-lg">
+                <img
+                  src=""
+                  alt="Mark Doe"
+                  class="w-12 h-12 rounded-full flex-shrink-0"
+                />
+                <div class="flex-1">
+                  <div class="flex items-center justify-between mb-2">
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Mark Doe</h4>
+                      <div class="flex items-center space-x-2">
+                        <div class="flex space-x-1">
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                        </div>
+                        <span class="text-sm text-gray-600">5</span>
+                      </div>
+                    </div>
+                    <span class="text-sm text-gray-500"
+                      >Reviewed on 22nd March, 2024</span
+                    >
+                  </div>
+                  <p class="text-gray-700 text-sm leading-relaxed">
+                    I was initially apprehensive, having no prior design
+                    experience. But the instructor, John Doe, did an amazing job
+                    of breaking down complex concepts into easily digestible
+                    modules. The video lectures were engaging, and the
+                    real-world examples really helped solidify my understanding.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Review 3 -->
+              <div class="flex space-x-4 p-4 bg-gray-50 rounded-lg">
+                <img
+                  src=""
+                  alt="Mark Doe"
+                  class="w-12 h-12 rounded-full flex-shrink-0"
+                />
+                <div class="flex-1">
+                  <div class="flex items-center justify-between mb-2">
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Mark Doe</h4>
+                      <div class="flex items-center space-x-2">
+                        <div class="flex space-x-1">
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                          <span class="text-byway_yellow text-sm"
+                            ><i class="bx bxs-star"></i
+                          ></span>
+                        </div>
+                        <span class="text-sm text-gray-600">5</span>
+                      </div>
+                    </div>
+                    <span class="text-sm text-gray-500"
+                      >Reviewed on 22nd March, 2024</span
+                    >
+                  </div>
+                  <p class="text-gray-700 text-sm leading-relaxed">
+                    I was initially apprehensive, having no prior design
+                    experience. But the instructor, John Doe, did an amazing job
+                    of breaking down complex concepts into easily digestible
+                    modules. The video lectures were engaging, and the
+                    real-world examples really helped solidify my understanding.
+                  </p>
+                </div>
+              </div>
+
+              <!-- View More Button -->
+              <div class="text-start">
+                <button
+                  class="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors duration-200"
+                >
+                  View more Reviews
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Customer Testimonials Section -->
+      <section class="bg-[#F8FAFC] px-4 lg:px-[80px] py-[80px]">
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-xl md:text-2xl font-semibold text-gray-900">
+            What Our Customer Say About Us
+          </h2>
+          <div class="flex space-x-2">
+            <button
+              class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors duration-200"
+            >
+              <span class="text-gray-600">icon</span>
+            </button>
+            <button
+              class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors duration-200"
+            >
+              <span class="text-gray-600">icon</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Testimonial 1 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="text-blue-500 text-2xl mb-4">"</div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-6">
+              "Byway's tech courses are top-notch! As someone who's always
+              looking to stay ahead in the rapidly evolving tech world, I
+              appreciate the up-to-date content and engaging multimedia.
+            </p>
+            <div class="flex items-center space-x-3">
+              <img
+                src="../images/Ellipse 61.png"
+                alt="Jane Doe"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <h4 class="font-semibold text-gray-900 text-sm">Jane Doe</h4>
+                <p class="text-gray-600 text-xs">Designer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="text-blue-500 text-2xl mb-4">"</div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-6">
+              "Byway's tech courses are top-notch! As someone who's always
+              looking to stay ahead in the rapidly evolving tech world, I
+              appreciate the up-to-date content and engaging multimedia.
+            </p>
+            <div class="flex items-center space-x-3">
+              <img
+                src="../images/Ellipse 61.png"
+                alt="Jane Doe"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <h4 class="font-semibold text-gray-900 text-sm">Jane Doe</h4>
+                <p class="text-gray-600 text-xs">Designer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="text-blue-500 text-2xl mb-4">"</div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-6">
+              "Byway's tech courses are top-notch! As someone who's always
+              looking to stay ahead in the rapidly evolving tech world, I
+              appreciate the up-to-date content and engaging multimedia.
+            </p>
+            <div class="flex items-center space-x-3">
+              <img
+                src="../images/Ellipse 61.png"
+                alt="Jane Doe"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <h4 class="font-semibold text-gray-900 text-sm">Jane Doe</h4>
+                <p class="text-gray-600 text-xs">Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- // You can build the cards yourself now -->
     </main>
+
+    <!-- Footer -->
     <footer
       class="bg-[#1E293B] text-white px-[35px] py-[4rem] md:px-16 lg:px-28 flex flex-col lg:flex-row items-start justify-between gap-16"
     >
@@ -549,6 +965,8 @@
           ></i>
         </div>
       </section>
-    </footer> 
+    </footer>
+
+    <script src="../byway.js"></script>
   </body>
 </html>
