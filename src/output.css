@@ -1596,6 +1596,16 @@ video {
   padding-bottom: 80px;
 }
 
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
